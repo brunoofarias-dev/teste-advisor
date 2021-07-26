@@ -532,9 +532,8 @@
     const width = window.screen.width - 20;
     let maxHeight= 500;
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-      maxHeight = window.screen.height - 100;
+      maxHeight = window.screen.height - 150;
     }
-
     function openChat() {
       const existentClass = document.getElementById("myIframe").className;
       if (existentClass === "openflow-chat-inactive") {
@@ -571,8 +570,5 @@
     document.body.appendChild(div);
   </script>
   <!-- END ~ OpenFlow Widget -->
-  
-  
-  
 </body>
 </html>
