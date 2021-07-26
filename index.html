@@ -532,6 +532,8 @@
     const width = window.screen.width - 20;
     let maxHeight = 500;
 
+    console.log(userAgent);
+
     if (/Android/i.test(navigator.userAgent)){
       maxHeight = window.screen.height - 170;
     } else if (/iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
