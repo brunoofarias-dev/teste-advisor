@@ -536,9 +536,13 @@
 
     if (/Android/i.test(navigator.userAgent)){
       maxHeight = window.screen.height - 170;
+      console.log('aqui')
     } else if (/iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
       maxHeight = window.screen.height - 250;
+      console.log('aqui2')
     }
+
+    console.log(maxHeight);
 
     function openChat() {
       const existentClass = document.getElementById("myIframe").className;
